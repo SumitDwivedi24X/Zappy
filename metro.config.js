@@ -1,5 +1,6 @@
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
 const { withNativeWind } = require('nativewind/metro');
+const path = require('path');
 
 /**
  * Metro configuration
@@ -9,8 +10,15 @@ const { withNativeWind } = require('nativewind/metro');
  */
 const baseConfig = getDefaultConfig(__dirname);
 
+const escapeRegExp = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 const customConfig = {
-  // any other custom config can go here if needed
+  resolver: {
+    // The backend lives in ./server with its own node_modules; keep Metro out of it.
+    blockList: [
+      new RegExp(`^${escapeRegExp(path.join(__dirname, 'server'))}\\/.*`),
+    ],
+  },
 };
 
 const mergedConfig = mergeConfig(baseConfig, customConfig);
