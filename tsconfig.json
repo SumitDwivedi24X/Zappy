@@ -10,7 +10,7 @@
     "**/Pods"
   ],
   "compilerOptions": {
+    "jsx": "react-jsx",
     "types": ["jest"],
-    "moduleResolution": "node",
   }
 }

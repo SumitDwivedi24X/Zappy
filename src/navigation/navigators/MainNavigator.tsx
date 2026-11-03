@@ -1,14 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import MainTabNavigator from './MainTabNavigator';
+
+const Stack = createNativeStackNavigator();
 
 const MainNavigator = () => {
   return (
-    <View>
-      <Text>MainNavigator</Text>
-    </View>
-  )
-}
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="MainStack" component={MainTabNavigator} />
+    </Stack.Navigator>
+  );
+};
 
-export default MainNavigator
+export default MainNavigator;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
