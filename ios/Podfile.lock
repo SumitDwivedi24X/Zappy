@@ -1979,6 +1979,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
+  - react-native-vector-icons-fontawesome (13.1.2)
   - React-NativeModulesApple (0.83.4):
     - boost
     - DoubleConversion
@@ -2825,6 +2826,7 @@ DEPENDENCIES:
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - "react-native-vector-icons-fontawesome (from `../node_modules/@react-native-vector-icons/fontawesome`)"
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-networking (from `../node_modules/react-native/ReactCommon/react/networking`)
   - React-oscompat (from `../node_modules/react-native/ReactCommon/oscompat`)
@@ -2958,6 +2960,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-vector-icons-fontawesome:
+    :path: "../node_modules/@react-native-vector-icons/fontawesome"
   React-NativeModulesApple:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-networking:
@@ -3040,7 +3044,7 @@ SPEC CHECKSUMS:
   FBLazyVector: 82d1d7996af4c5850242966eb81e73f9a6dfab1e
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
-  hermes-engine: 1695ff977e49c423eb4c692aeb82bfe251fc05d0
+  hermes-engine: 4fb687dbd0ff62e8127aa85610c8b6878ef45a84
   RCT-Folly: 846fda9475e61ec7bcbf8a3fe81edfcaeb090669
   RCTDeprecation: 9da1d0cf93db23ca8b41e8efe9ae558fd9c0077f
   RCTRequired: 92a63c7041031a131fa5206eb082d53f95729b79
@@ -3078,6 +3082,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: 3a5f700ed673820ab4b1b35ba0cf8476400bc4c5
   React-microtasksnativemodule: 094677e625f12276a8f871844a5ee6a945a90221
   react-native-safe-area-context: c6e2edd1c1da07bdce287fa9d9e60c5f7b514616
+  react-native-vector-icons-fontawesome: 9a819e97393c0e60e3ae9defbe28248002a8957c
   React-NativeModulesApple: 29290351acc118784e158aa7b23c42719dc57617
   React-networking: d01f94f15d1a6fce689a8c57d2397a5a40b0b5aa
   React-oscompat: 854967d380ee2921c848790cdb942b42d22017d8

@@ -1,39 +1,20 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import { StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import { StyleSheet } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import './global.css';
+import { NavigationContainer } from '@react-navigation/native';
+import {
+  navigationRef,
+  setIsNavigationReady,
+} from './src/navigation/Navigation';
+import RootNavigator from './src/navigation/navigators/RootNavigator';
 
 function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
+      <NavigationContainer ref={navigationRef} onReady={() => setIsNavigationReady(true)}>
+        <RootNavigator />
+      </NavigationContainer>
     </SafeAreaProvider>
-  );
-}
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      {/* <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      /> */}
-      <Text className='text-pink-400'>Custom content</Text>
-    </View>
   );
 }
 
