@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 const RootNavigator = () => {
   const isAuthenticated = true;
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       {isAuthenticated ? (
         <Stack.Screen name={RootRoutes.MainStack} component={MainNavigator} />
       ) : (

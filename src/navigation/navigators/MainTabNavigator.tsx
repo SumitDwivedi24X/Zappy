@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import FontAwesome from '@react-native-vector-icons/fontAwesome/static';
+import FontAwesome from '@react-native-vector-icons/fontawesome/static';
 import { MainRoutes } from '../Routes';
 import HomeScreen from '../../screens/HomeScreen';
 import StoreScreen from '../../screens/StoreScreen';
